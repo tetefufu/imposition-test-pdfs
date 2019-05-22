@@ -5,4 +5,13 @@
     <RootNamespace>imposition_test_pdfs</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="A4.bleed0mm.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="A4.bleed3mm.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
