@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>imposition_test_pdfs</RootNamespace>
+  </PropertyGroup>
+
+</Project>
