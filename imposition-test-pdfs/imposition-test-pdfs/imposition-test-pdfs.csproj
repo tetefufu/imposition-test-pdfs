@@ -1,17 +1,26 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>imposition_test_pdfs</RootNamespace>
+    <PackageId>ImpositionTestPdfs</PackageId>
+    <Version>1.1.0</Version>
+    <Authors>Joel Bellot</Authors>
+    <Company>ImpositionSoftware.Com</Company>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="A4.bleed0mm.pdf">
+    <None Remove="A4.bleed0mm.pdf" />
+    <None Remove="A4.bleed3mm.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="A4.bleed0mm.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="A4.bleed3mm.pdf">
+    </Content>
+    <Content Include="A4.bleed3mm.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
 
 </Project>

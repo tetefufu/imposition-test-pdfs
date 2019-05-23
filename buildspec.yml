@@ -1,0 +1,24 @@
+
+
+version: 0.2
+phases:
+    pre_build:
+        commands:
+            - echo pre_build
+    build:
+        commands:
+            - echo build `date`
+            # untested
+            - dotnet build .\imposition-test-pdfs\imposition-test-pdfs.sln
+    post_build:
+        commands:
+            - echo test `test`
+            # untested
+            - dotnet test .\imposition-test-pdfs\imposition-test-pdfs\imposition-test-pdfs.test.csproj
+            - dotnet pack .\imposition-test-pdfs\imposition-test-pdfs\imposition-test-pdfs.csproj
+            # untested
+            - dotnet nuget push .\imposition-test-pdfs\imposition-test-pdfs\imposition-test-pdfs.1.0.1.nupkg */**/*.nupkg -k qz2jga8pl3dvn2akksyquwcs9ygggg4exypy3bhxy6w6x6 -s https://api.nuget.org/v3/index.json
+artifacts:
+    files:
+        - '**/*'
+    base-directory: 'api/bin/dist'
