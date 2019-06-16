@@ -3,7 +3,9 @@ mono: none
 dotnet: 2.0.0
 
 install:
-  - dotnet restore .\imposition-test-pdfs\imposition-test-pdfs\imposition-test-pdfs.csproj
+  - cd imposition-test-pdfs\imposition-test-pdfs\
+  - dir
+  - dotnet restore
 
 script:
-  - dotnet build .\imposition-test-pdfs\imposition-test-pdfs\imposition-test-pdfs.csproj
+  - dotnet build
