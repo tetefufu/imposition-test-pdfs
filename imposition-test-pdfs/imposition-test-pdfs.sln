@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28705.295
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imposition-test-pdfs", "imposition-test-pdfs\imposition-test-pdfs.csproj", "{52A904BA-AF08-4AC2-8400-FE3588C46ABC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "imposition-test-pdfs", "imposition-test-pdfs\imposition-test-pdfs.csproj", "{52A904BA-AF08-4AC2-8400-FE3588C46ABC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imposition-test-pdfs.test", "imposition-test-pdfs.test\imposition-test-pdfs.test.csproj", "{9BE3B53D-7B02-4D5E-80EA-B0E6D9781AB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "imposition-test-pdfs.test", "imposition-test-pdfs.test\imposition-test-pdfs.test.csproj", "{9BE3B53D-7B02-4D5E-80EA-B0E6D9781AB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB622E51-47F2-4F80-A31B-844F63DE9D99}"
+	ProjectSection(SolutionItems) = preProject
+		..\.travis.yml = ..\.travis.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
