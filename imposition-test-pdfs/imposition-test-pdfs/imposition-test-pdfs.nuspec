@@ -1,0 +1,23 @@
+﻿
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>imposition-test-pdfs</id>
+    <title>Imposition-Test-Pdfs</title>
+    <version>1.0.2</version>
+    <description>
+      Test Pdfs
+    </description>
+    <summary>
+      Test Pdfs
+    </summary>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <authors>Joel BEllot</authors>
+    <copyright>Copyright Â© Joel Bellot 2019</copyright>
+    <projectUrl>https://github.com/tetefufu/imposition-test-pdfs</projectUrl>
+    <tags>pdf</tags>
+  </metadata>
+  <files>
+    <file src="build\**" target="build" />
+  </files>
+</package>
